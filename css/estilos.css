@@ -2,12 +2,14 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    }
+    
+}
 
 
 .header{
     background-color:rgb(27, 128, 230);
     width: 100%;
+    
 }
 
 
@@ -64,6 +66,7 @@ footer > div.columnas-footer{
     display: flex;
     flex-direction: row;
 }
+
 footer > div.columnas-footer > div.col-logo{
 margin: auto;
 width: 30%;
@@ -97,6 +100,8 @@ font-size: 12px;
 .main{
     position: relative;
     text-align: center;
+    width:100%;
+    
 }
 .busqueda-inicio > div.texto-portada{
     position: absolute;
@@ -118,9 +123,10 @@ font-size: 12px;
 .prop-destacadas{
     text-align: center;
     margin: auto;
-    padding: 15px 10%;
+    padding: 15px 10px;
     animation-name: opacidad;
     animation-duration: 3s;
+    width: 80%;
 }
 
 .propiedades{
@@ -128,10 +134,12 @@ font-size: 12px;
     grid-template-areas: "prop1 prop2 prop3"
                          "prop4 prop5 prop6"
                          "prop7 prop8 prop9";
-    margin: 10px;
+    margin:10px;
     grid-gap: 20px;
-    width: 100%;
+    width:auto;
     }
+
+
 .prop-general{
     text-align: center;
     margin: auto;
@@ -142,8 +150,9 @@ font-size: 12px;
 }
 .propiedades > div > img
 {
-    height: 250px;
-    width: 350px;
+    height: 200px;
+    width: 300px;
+
 }
 .propiedades > div 
 {
@@ -211,7 +220,12 @@ font-weight: bold;
 
 
   @media only screen and (max-width: 800px) {
+    .main{
+        width: 100%;
+
+    }
     
+        
     .propiedades{
         display: grid;
         grid-template-areas: "prop1 prop2"
@@ -220,6 +234,7 @@ font-weight: bold;
                              "prop7 prop8";
         margin: 10px;
         grid-gap: 10px;
+
     }
     .logo
     {
